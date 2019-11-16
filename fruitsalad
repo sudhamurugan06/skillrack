@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int x,y,z,c=0;
+scanf("%d %d %d",&x,&y,&z);
+for(int n=1;n<=x;n++)
+{
+        if(x>=n;y>=2*n;z>=4*n)
+        {
+            c++;
+        }
+    }
+    if(c>0){printf("%d",c);}
+else
+{
+    printf("0");
+}
+
+}
