@@ -28,3 +28,25 @@ else
 printf("INVALID");
 }
 }
+//or*******************************************************************************************************************
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+char s[1000];
+scanf("%s",s);
+int i,l,j=0,k=0;
+l=strlen(s);
+for(i=0;i<l;i++)
+{
+    if(isupper(s[i]))
+    j++;
+    else if(islower(s[i]))
+    k++;
+}
+if(j==l||k==l)printf("VALID");
+else if(j==1&&k==l-1)printf("VALID");
+else
+printf("INVALID");
+}
