@@ -30,3 +30,29 @@ for(int i=2;i<=n;i++)
     printf("\n");
 }
 }
+************************or**************************
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+int a;
+scanf("%d",&a);
+int b[a],c[a];
+for(int i=1;i<=a;i++)
+{
+    b[i]=a,c[i]=1;
+    for(int j=1;j<=i;j++)
+    {
+        if(j%2!=0)
+        {
+        printf("%d ",c[j]++);
+        }
+        else 
+        {
+        printf("%d ",b[j]--);
+        }
+    }
+    printf("\n");
+}
+}
