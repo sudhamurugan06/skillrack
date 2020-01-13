@@ -56,3 +56,27 @@ for(int i=1;i<=a;i++)
     printf("\n");
 }
 }
+****************************************or*************************
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n,i,j,p,q,pat[51][51];
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {
+        for(j=i,p=1,q=n;j<=n;j++,p++,q--)
+        {
+            pat[j][i]=(i%2==1)?p:q;
+        }
+    }
+    for(i=1;i<=n;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d ",pat[i][j]);
+        }
+        printf("\n");
+    }
+}
