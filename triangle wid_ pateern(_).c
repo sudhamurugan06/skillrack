@@ -1,8 +1,8 @@
-/***********if n=5...PATTERN AS BELOW:
+if n=5...PATTERN AS BELOW:
 ______                                                                                                                       
 \****/                                                                                                                       
 *\**/                                                                                                                        
-**\/ */
+**\/ 
 
 #include<stdio.h>
 #include <stdlib.h>
