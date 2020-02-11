@@ -3,6 +3,66 @@
 
 int main()
 {
+    int n,i=0,j,k,c,d;
+    char a[1000][1000];
+    while(scanf("%s",a[i])==1)
+    {
+        i++;
+    }
+    n=atoi(a[i-1]);
+    for(j=0;j<i-1;j++)
+    {
+        if((j+1)%n==0 && ((j+1)<=(i-1)))
+        {
+            d=strlen(a[j]);
+            for(k=d-1;k>=0;k--)
+            {
+                printf("%c",a[j][k]);
+            }
+        }
+        else
+        {
+        printf("%s",a[j]);
+        }
+        printf(" ");
+    }
+
+
+}
+******************************************************or***************************************
+#include<stdio.h>
+#include <stdlib.h>
+void reverse(char a[])
+{
+    int i;
+    for(i=strlen(a)-1;i>=0;i--)
+    printf("%c",a[i]);
+    printf(" ");
+}
+int main()
+{
+  char a[1000][1000],*rev;
+  int i=0,j=1,n=0,k;
+  while(scanf("%s",a[j])>0)
+  {
+    j++;
+  }
+  n=atoi(a[j-1]);
+  for(i=1;i<j-1;i++)
+  {
+      int k=i;
+      if(k%n!=0)
+      printf("%s ",a[i]);
+      else
+      reverse(a[i]);
+  }
+}
+***************************************************or*****************************************
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
     char str[1001],temp;
     scanf("%[^\n]s",str);
     int x,count=0,start,end;
